@@ -1,0 +1,7 @@
+services:
+  resume:
+    build: .
+    container_name: resume-app
+    restart: unless-stopped
+    ports:
+      - "3000:80"
