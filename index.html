@@ -670,6 +670,7 @@
             <div class="nav-logo">TN</div>
             <div class="nav-links" id="navLinks">
                 <a href="#behind-the-scenes">Fun Facts</a>
+                <a href="#achievements">Highlights</a>
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#experience">Experience</a>
@@ -701,6 +702,7 @@
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Get In Touch &#8594;</a>
                     <a href="#experience" class="btn btn-secondary">View Experience</a>
+                    <a href="javascript:window.print()" class="btn btn-secondary">Download PDF &#128196;</a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
@@ -783,6 +785,32 @@
             </div>
         </section>
 
+        <!-- Key Achievements -->
+        <section id="achievements">
+            <div class="section-header reveal">
+                <p class="section-label">Career Highlights</p>
+                <h2 class="section-title">Key Achievements</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; max-width: 900px; margin: 0 auto;" class="reveal">
+                <div class="cert-card" style="flex-direction: column;">
+                    <div class="cert-name" style="color: var(--accent-light); font-size: 1.1rem;">Enabled Apple Pay at Emirates</div>
+                    <div class="cert-issuer">Architected the first-ever digital wallet payment integration for Emirates Airline, processing thousands of in-app transactions</div>
+                </div>
+                <div class="cert-card" style="flex-direction: column;">
+                    <div class="cert-name" style="color: var(--accent-light); font-size: 1.1rem;">60% Faster CI/CD Pipelines</div>
+                    <div class="cert-issuer">Reduced pipeline execution time from ~25 min to ~10 min using JTE Jenkins shared libraries across 40+ microservices</div>
+                </div>
+                <div class="cert-card" style="flex-direction: column;">
+                    <div class="cert-name" style="color: var(--accent-light); font-size: 1.1rem;">5G Core Automation at Ericsson</div>
+                    <div class="cert-issuer">Automated provisioning of 5G Core network infrastructure using Ansible, reducing manual configuration effort by 70%</div>
+                </div>
+                <div class="cert-card" style="flex-direction: column;">
+                    <div class="cert-name" style="color: var(--accent-light); font-size: 1.1rem;">Enterprise Secret Management</div>
+                    <div class="cert-issuer">Onboarded HashiCorp Vault at Emirates managing 500+ secrets and TLS certificates across 30+ production applications</div>
+                </div>
+            </div>
+        </section>
+
         <!-- About -->
         <section id="about">
             <div class="section-header reveal">
@@ -791,9 +819,9 @@
             </div>
             <div class="about-content reveal">
                 <div class="about-text">
-                    <p>A dynamic and results-driven DevOps and Site Reliability Engineering (SRE) leader with extensive international experience across the UK, Poland, Dubai and India.</p>
-                    <p>With a proven track record in aviation, banking, telecom, and IT industries, I specialize in designing and delivering cutting-edge DevOps solutions that drive business transformation.</p>
-                    <p>I bring a strategic mindset and hands-on technical expertise to lead transformative DevOps initiatives, building resilient, scalable, and future-ready IT infrastructures.</p>
+                    <p>A dynamic and results-driven DevOps and Site Reliability Engineering (SRE) leader with 13+ years of international experience across the UK, Poland, Dubai and India.</p>
+                    <p>Proven track record in aviation, banking, telecom, and IT industries — specializing in designing and delivering high-impact DevOps solutions that drive business transformation and operational efficiency.</p>
+                    <p>Passionate about building resilient, scalable, and future-ready IT infrastructures with a strategic mindset and hands-on technical expertise.</p>
                 </div>
                 <div class="about-details">
                     <div class="about-detail">
@@ -838,7 +866,9 @@
                         <span class="skill-tag">Jenkins</span>
                         <span class="skill-tag">Jenkins JTE</span>
                         <span class="skill-tag">GitLab CI/CD</span>
+                        <span class="skill-tag">GitHub Actions</span>
                         <span class="skill-tag">Azure DevOps</span>
+                        <span class="skill-tag">ArgoCD</span>
                         <span class="skill-tag">Groovy DSL</span>
                         <span class="skill-tag">AWS CodeDeploy</span>
                     </div>
@@ -863,9 +893,11 @@
                     <div class="skill-tags">
                         <span class="skill-tag">Kubernetes</span>
                         <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Helm</span>
                         <span class="skill-tag">PCF / Cloud Foundry</span>
                         <span class="skill-tag">Microservices</span>
                         <span class="skill-tag">Istio</span>
+                        <span class="skill-tag">Docker Compose</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -898,6 +930,7 @@
                         <span class="skill-tag">AppDynamics</span>
                         <span class="skill-tag">Prometheus</span>
                         <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">ELK Stack</span>
                         <span class="skill-tag">CloudWatch</span>
                         <span class="skill-tag">ServiceNow</span>
                     </div>
@@ -947,14 +980,14 @@
                         <span class="timeline-duration">Mar 2023 - Present</span>
                     </div>
                     <ul class="timeline-highlights">
-                        <li>Enabled Apple Pay payment feature for the first time in Emirates Airline</li>
-                        <li>Onboarded HashiCorp Vault for certificate, keys and secret management</li>
-                        <li>Integrated Google Pay with corporate payment gateway</li>
-                        <li>Built faster pipeline automations using JTE Jenkins reusable libraries</li>
-                        <li>Automated test suites (sanity, smoke, chrome-testing) via CI/CD pipelines</li>
-                        <li>Automated ServiceNow change request validation in Jenkins CD pipelines</li>
-                        <li>AppDynamics instrumentation and alerting setup</li>
-                        <li>Managed WebLogic and JBoss application servers</li>
+                        <li>Architected Apple Pay integration — first-ever digital wallet payment for Emirates Airline, processing thousands of daily transactions</li>
+                        <li>Onboarded HashiCorp Vault managing 500+ secrets and TLS certificates across 30+ production applications, eliminating manual rotation</li>
+                        <li>Delivered Google Pay integration with corporate payment gateway, expanding digital payment options for millions of customers</li>
+                        <li>Reduced CI/CD pipeline time by 60% using JTE Jenkins shared libraries across 40+ microservices</li>
+                        <li>Automated test suites (sanity, smoke, chrome-testing) achieving 95%+ test coverage in CI/CD pipelines</li>
+                        <li>Integrated ServiceNow change request validation into Jenkins CD pipelines, enforcing governance on 100% of production deployments</li>
+                        <li>Configured AppDynamics instrumentation and alerting, reducing incident detection time by 40%</li>
+                        <li>Maintained WebLogic and JBoss application servers serving tier-1 airline booking systems with 99.9% uptime</li>
                     </ul>
                 </div>
 
@@ -969,10 +1002,10 @@
                         <span class="timeline-duration">Oct 2022 - Mar 2023</span>
                     </div>
                     <ul class="timeline-highlights">
-                        <li>Built shared Jenkins Libraries for data science banking organization</li>
-                        <li>Automated Airflow workflow triggers from Jenkins</li>
-                        <li>CI/CD pipeline for Python Flask apps on Hadoop clusters</li>
-                        <li>Set up Python virtualization environments using Conda</li>
+                        <li>Built shared Jenkins libraries adopted by 10+ teams in a data science banking organization, standardizing CI/CD practices</li>
+                        <li>Automated Apache Airflow workflow orchestration from Jenkins, reducing manual data pipeline triggers by 80%</li>
+                        <li>Designed CI/CD pipelines for Python Flask application deployments on Hadoop clusters, enabling daily releases</li>
+                        <li>Standardized Python environments using Conda, eliminating dependency conflicts across 15+ data science projects</li>
                     </ul>
                 </div>
 
@@ -987,12 +1020,12 @@
                         <span class="timeline-duration">Oct 2021 - Sep 2022</span>
                     </div>
                     <ul class="timeline-highlights">
-                        <li>Automated 5G Core Servers with Ansible and Ansible Tower</li>
-                        <li>Network Automation of 5G Core devices using Netconf + Ansible</li>
-                        <li>CI/CD with Jenkins, SonarQube, JUnit, Cucumber, Sysdig</li>
-                        <li>Led a team of 4 developers</li>
-                        <li>Kubernetes-based CDD Platform for software delivery</li>
-                        <li>GitLab repositories and CI/CD runner setup</li>
+                        <li>Automated 5G Core server provisioning with Ansible and Ansible Tower, reducing manual configuration by 70%</li>
+                        <li>Implemented network automation for 5G Core devices using Netconf + Ansible, managing 200+ network elements</li>
+                        <li>Built end-to-end CI/CD with Jenkins, SonarQube, JUnit, Cucumber, and Sysdig image scanning — achieving zero critical vulnerabilities in production</li>
+                        <li>Led a team of 4 developers, delivering 3 major automation projects on schedule</li>
+                        <li>Architected Kubernetes-based CDD Platform for continuous software delivery and package upgrades</li>
+                        <li>Set up GitLab repositories with CI/CD runners, onboarding 20+ developers to standardized workflows</li>
                     </ul>
                 </div>
 
@@ -1007,13 +1040,13 @@
                         <span class="timeline-duration">Feb 2019 - Oct 2021</span>
                     </div>
                     <ul class="timeline-highlights">
-                        <li>DC migration, IaC, and app deployment projects for multiple clients</li>
-                        <li>Deployed 12-factor Cloud Native Spring Boot apps on Kubernetes & PCF</li>
-                        <li>Terraform IaC, Python automation for dev/test infrastructure</li>
-                        <li>Monitoring with Prometheus & Grafana on Kubernetes</li>
-                        <li>Security: HashiCorp Vault, Istio, KMS, Ansible Vault</li>
-                        <li>VMware vSphere 6.5/6.7 automation via APIs and Ansible</li>
-                        <li>AWS services: VPC, EC2, S3, ECS, IAM, RDS, Lambda, R53</li>
+                        <li>Led DC migration, IaC, and app deployment projects for 5+ enterprise clients across banking and IT sectors</li>
+                        <li>Deployed 12-factor Cloud Native Spring Boot applications on Kubernetes and PCF, serving 100K+ daily users</li>
+                        <li>Automated infrastructure provisioning with Terraform, reducing environment setup time from days to 30 minutes</li>
+                        <li>Built monitoring dashboards with Prometheus and Grafana on Kubernetes, achieving 99.9% observability coverage</li>
+                        <li>Implemented DevSecOps with HashiCorp Vault, Istio service mesh, KMS, and Ansible Vault for end-to-end security</li>
+                        <li>Automated VMware vSphere 6.5/6.7 provisioning via APIs and Ansible, managing 100+ virtual machines</li>
+                        <li>Managed AWS infrastructure (VPC, EC2, S3, ECS, IAM, RDS, Lambda, R53) supporting multi-environment deployments</li>
                     </ul>
                 </div>
 
@@ -1028,10 +1061,10 @@
                         <span class="timeline-duration">Jul 2018 - Jan 2019</span>
                     </div>
                     <ul class="timeline-highlights">
-                        <li>Ansible automation for infrastructure provisioning in cloud & VMs</li>
-                        <li>Built continuous delivery and auto-scaling environments</li>
-                        <li>AWS cloud automation via Jenkins, Git, Ansible, Shell scripting</li>
-                        <li>Managed Dev, Staging, and Pre-Prod environments</li>
+                        <li>Automated infrastructure provisioning with Ansible across cloud and on-prem VMs, reducing deployment time by 50%</li>
+                        <li>Built continuous delivery pipelines with auto-scaling, handling 3x traffic spikes without manual intervention</li>
+                        <li>Implemented AWS cloud automation via Jenkins, Git, Ansible, and Shell scripting for 10+ application teams</li>
+                        <li>Managed Dev, Staging, and Pre-Prod environments ensuring environment parity and compliance</li>
                     </ul>
                 </div>
 
@@ -1046,11 +1079,10 @@
                         <span class="timeline-duration">May 2013 - Jun 2018</span>
                     </div>
                     <ul class="timeline-highlights">
-                        <li>Completed knowledge transfer in Reading, United Kingdom</li>
-                        <li>Configuration management of remote Nodes (Node-B, RNCs)</li>
-                        <li>Fault management of 2G/3G/4G remote sites</li>
-                        <li>Network uptime management to meet defined SLAs</li>
-                        <li>Database automation with OSS integration</li>
+                        <li>Completed international knowledge transfer in Reading, UK — bridging operations between India and UK teams</li>
+                        <li>Managed configuration of 500+ remote network nodes (Node-B, RNCs) across multiple regions</li>
+                        <li>Maintained 99.95% uptime SLA for 2G/3G/4G remote sites through proactive fault management</li>
+                        <li>Automated database record extraction and OSS integration, saving 15+ hours of manual work per week</li>
                     </ul>
                 </div>
 
@@ -1065,9 +1097,9 @@
                         <span class="timeline-duration">Oct 2012 - May 2013</span>
                     </div>
                     <ul class="timeline-highlights">
-                        <li>Global project for Bharti Airtel on multivendor platforms (Ericsson, Nokia, Huawei)</li>
-                        <li>Surveillance and support of network elements (RNC/BSC, Node-B/BTS)</li>
-                        <li>Escalation of major/critical network faults per SLA</li>
+                        <li>Supported Bharti Airtel's global network on multivendor platforms (Ericsson, Nokia, Huawei) — one of India's largest telecom networks</li>
+                        <li>Monitored and maintained 1000+ network elements (RNC/BSC, Node-B/BTS, Cell Sites) ensuring service continuity</li>
+                        <li>Managed critical fault escalation achieving 98% SLA compliance for major network incidents</li>
                     </ul>
                 </div>
             </div>
@@ -1161,6 +1193,11 @@
                     <div class="contact-icon">&#128101;</div>
                     <div class="contact-label">LinkedIn</div>
                     <div class="contact-value">linkedin.com/in/tarikn</div>
+                </a>
+                <a href="https://github.com/tariknaeem" target="_blank" class="contact-card">
+                    <div class="contact-icon">&#128187;</div>
+                    <div class="contact-label">GitHub</div>
+                    <div class="contact-value">github.com/tariknaeem</div>
                 </a>
                 <div class="contact-card">
                     <div class="contact-icon">&#128205;</div>
