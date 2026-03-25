@@ -19,10 +19,12 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             mkdir -p ~/apps/resume
-            cd ~/apps/resume
-            git clone https://github.com/tariknaeem/resume.git /tmp/resume-deploy 2>/dev/null || (cd /tmp/resume-deploy && git pull)
-            cp /tmp/resume-deploy/index.html ~/apps/resume/
+            rm -rf /tmp/resume-deploy
+            git clone https://github.com/tariknaeem/resume.git /tmp/resume-deploy
+            cp /tmp/resume-deploy/*.html ~/apps/resume/
+            cp /tmp/resume-deploy/*.jpg ~/apps/resume/ 2>/dev/null || true
+            cp /tmp/resume-deploy/*.png ~/apps/resume/ 2>/dev/null || true
             cp /tmp/resume-deploy/Dockerfile ~/apps/resume/
             cp /tmp/resume-deploy/docker-compose.yml ~/apps/resume/
-            docker compose up -d --build
+            cd ~/apps/resume && docker compose up -d --build
             rm -rf /tmp/resume-deploy
