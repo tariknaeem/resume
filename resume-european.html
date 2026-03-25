@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarik Naeem - CV (Europass Style)</title>
+    <title>Tarik Naeem - CV (European Format)</title>
+    <meta name="description" content="Senior DevOps Engineer SRE with 13+ years experience in CI/CD, Kubernetes, AWS, Terraform, Jenkins, Docker">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; color: #2c3e50; line-height: 1.5; background: #fff; }
+        body { font-family: 'Inter', Arial, Helvetica, sans-serif; color: #2c3e50; line-height: 1.6; background: #fff; font-size: 12px; }
         .page { max-width: 800px; margin: 0 auto; padding: 40px 50px; }
         @media print {
             body { background: white; }
@@ -19,216 +20,198 @@
         .print-btn:hover { background: #34495e; }
 
         /* Header */
-        .header { display: flex; gap: 25px; align-items: flex-start; border-bottom: 3px solid #2c3e50; padding-bottom: 20px; margin-bottom: 20px; }
+        header { display: flex; gap: 25px; align-items: flex-start; border-bottom: 3px solid #2c3e50; padding-bottom: 20px; margin-bottom: 20px; }
         .photo { width: 100px; height: 120px; border-radius: 4px; object-fit: cover; border: 1px solid #ddd; }
-        .header-info h1 { font-size: 26px; color: #2c3e50; }
-        .header-info .title { font-size: 15px; color: #7f8c8d; margin: 2px 0 8px; }
-        .contact-row { display: flex; flex-wrap: wrap; gap: 15px; font-size: 12px; color: #555; }
-        .contact-row span { display: flex; align-items: center; gap: 4px; }
+        header h1 { font-size: 26px; color: #2c3e50; margin-bottom: 2px; }
+        header h2 { font-size: 15px; color: #7f8c8d; font-weight: 400; margin-bottom: 8px; }
+        .contact-info { font-size: 12px; color: #555; line-height: 1.8; }
 
         /* Sections */
-        .section { margin-bottom: 16px; }
-        .section-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #2c3e50; border-bottom: 1px solid #bdc3c7; padding-bottom: 4px; margin-bottom: 10px; }
+        section { margin-bottom: 16px; }
+        h3 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #2c3e50; border-bottom: 1px solid #bdc3c7; padding-bottom: 4px; margin-bottom: 10px; }
 
-        /* Two column layout */
-        .two-col { display: grid; grid-template-columns: 160px 1fr; gap: 8px; margin-bottom: 8px; }
-        .col-label { font-size: 11px; color: #7f8c8d; padding-top: 2px; }
-        .col-content { font-size: 12.5px; }
-        .col-content .role { font-weight: 600; }
-        .col-content .company { color: #2c3e50; }
-        .col-content .location { font-size: 11px; color: #95a5a6; }
-        .col-content ul { margin: 4px 0 0 16px; font-size: 11.5px; color: #555; }
-        .col-content ul li { margin-bottom: 2px; }
+        /* Experience entries */
+        article { margin-bottom: 12px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .job-title { font-weight: 600; font-size: 12.5px; }
+        .job-date { font-size: 11px; color: #777; }
+        .job-company { font-size: 12px; color: #2c3e50; }
+        .job-location { font-size: 11px; color: #95a5a6; }
+        article ul { margin: 4px 0 0 18px; font-size: 11.5px; color: #555; }
+        article ul li { margin-bottom: 2px; }
 
         /* Skills */
-        .skills-grid { display: flex; flex-wrap: wrap; gap: 6px; }
-        .skill-chip { padding: 3px 10px; background: #ecf0f1; border-radius: 4px; font-size: 11px; color: #2c3e50; }
+        .skills-section p { margin-bottom: 6px; font-size: 12px; }
+        .skills-section strong { color: #2c3e50; }
 
         /* Summary */
         .summary { font-size: 12.5px; color: #555; margin-bottom: 8px; }
 
-        /* Certs inline */
-        .cert-list { font-size: 12px; color: #555; }
-        .cert-list li { margin-bottom: 2px; }
+        /* Lists */
+        .simple-list { font-size: 12px; color: #555; margin-left: 18px; }
+        .simple-list li { margin-bottom: 2px; }
     </style>
 </head>
 <body>
     <button class="print-btn no-print" onclick="window.print()">Print / Save PDF</button>
     <div class="page">
-        <!-- Header -->
-        <div class="header">
+        <header>
             <img src="photo.jpg" alt="Tarik Naeem" class="photo">
-            <div class="header-info">
+            <div>
                 <h1>Tarik Naeem</h1>
-                <div class="title">Senior Technical DevOps Engineer | SRE</div>
-                <div class="contact-row">
-                    <span>Dubai, UAE</span>
-                    <span>tariknaeem87@gmail.com</span>
-                    <span>linkedin.com/in/tarik-n-0147a5161</span>
-                    <span>github.com/tariknaeem</span>
+                <h2>Senior Technical DevOps Engineer | Site Reliability Engineer (SRE)</h2>
+                <div class="contact-info">
+                    Dubai, United Arab Emirates<br>
+                    Email: tariknaeem87@gmail.com<br>
+                    LinkedIn: linkedin.com/in/tarik-n-0147a5161<br>
+                    GitHub: github.com/tariknaeem
                 </div>
             </div>
-        </div>
+        </header>
 
-        <!-- Summary -->
-        <div class="section">
-            <div class="section-title">Personal Statement</div>
-            <p class="summary">DevOps and SRE leader with 13+ years of international experience across UK, Poland, Dubai and India. Proven track record in aviation, banking, telecom, and IT industries. Specialized in CI/CD automation, cloud infrastructure, container orchestration, and security — delivering high-impact solutions that drive business transformation.</p>
-        </div>
+        <section>
+            <h3>Professional Summary</h3>
+            <p class="summary">DevOps and Site Reliability Engineering (SRE) leader with 13+ years of international experience across the UK, Poland, Dubai, and India. Proven track record in aviation, banking, telecom, and IT industries. Specialized in CI/CD automation, cloud infrastructure, Kubernetes container orchestration, infrastructure as code, and DevSecOps. Experienced in leading teams and delivering high-impact solutions that drive business transformation and operational efficiency.</p>
+        </section>
 
-        <!-- Experience -->
-        <div class="section">
-            <div class="section-title">Professional Experience</div>
+        <section>
+            <h3>Professional Experience</h3>
 
-            <div class="two-col">
-                <div class="col-label">Mar 2023 - Present<br>Dubai, UAE</div>
-                <div class="col-content">
-                    <div class="role">Senior Technical DevOps Engineer | SRE</div>
-                    <div class="company">Emirates</div>
-                    <ul>
-                        <li>Architected Apple Pay integration — first-ever digital wallet payment for Emirates Airline</li>
-                        <li>Onboarded HashiCorp Vault managing 500+ secrets across 30+ production applications</li>
-                        <li>Delivered Google Pay integration with corporate payment gateway</li>
-                        <li>Reduced CI/CD pipeline time by 60% using JTE Jenkins shared libraries across 40+ microservices</li>
-                        <li>Integrated ServiceNow validation into Jenkins CD, enforcing governance on 100% of prod deployments</li>
-                        <li>Configured AppDynamics alerting, reducing incident detection time by 40%</li>
-                    </ul>
+            <article>
+                <div class="job-header">
+                    <span class="job-title">Senior Technical DevOps Engineer | SRE</span>
+                    <span class="job-date">March 2023 - Present</span>
                 </div>
-            </div>
+                <div class="job-company">Emirates</div>
+                <div class="job-location">Dubai, United Arab Emirates</div>
+                <ul>
+                    <li>Architected Apple Pay integration, the first-ever digital wallet payment for Emirates Airline, processing thousands of daily transactions</li>
+                    <li>Onboarded HashiCorp Vault managing 500+ secrets and TLS certificates across 30+ production applications, eliminating manual certificate rotation</li>
+                    <li>Delivered Google Pay integration with corporate payment gateway, expanding digital payment options for millions of customers</li>
+                    <li>Reduced CI/CD pipeline execution time by 60% using JTE Jenkins shared libraries across 40+ microservices</li>
+                    <li>Integrated ServiceNow change request validation into Jenkins CD pipelines, enforcing governance on 100% of production deployments</li>
+                    <li>Configured AppDynamics instrumentation and alerting, reducing incident detection time by 40%</li>
+                </ul>
+            </article>
 
-            <div class="two-col">
-                <div class="col-label">Oct 2022 - Mar 2023<br>Krakow, Poland</div>
-                <div class="col-content">
-                    <div class="role">Senior DevOps Engineer</div>
-                    <div class="company">Luxoft Poland</div>
-                    <ul>
-                        <li>Built shared Jenkins libraries adopted by 10+ teams in data science banking org</li>
-                        <li>Automated Airflow orchestration from Jenkins, reducing manual triggers by 80%</li>
-                        <li>Designed CI/CD for Python Flask deployments on Hadoop clusters</li>
-                    </ul>
+            <article>
+                <div class="job-header">
+                    <span class="job-title">Senior DevOps Engineer</span>
+                    <span class="job-date">October 2022 - March 2023</span>
                 </div>
-            </div>
+                <div class="job-company">Luxoft Poland</div>
+                <div class="job-location">Krakow, Poland</div>
+                <ul>
+                    <li>Built shared Jenkins libraries adopted by 10+ teams in a data science banking organization, standardizing CI/CD practices</li>
+                    <li>Automated Apache Airflow workflow orchestration from Jenkins, reducing manual data pipeline triggers by 80%</li>
+                    <li>Designed CI/CD pipelines for Python Flask application deployments on Hadoop clusters, enabling daily releases</li>
+                </ul>
+            </article>
 
-            <div class="two-col">
-                <div class="col-label">Oct 2021 - Sep 2022<br>Bengaluru, India</div>
-                <div class="col-content">
-                    <div class="role">DevOps Engineer / Architect</div>
-                    <div class="company">Ericsson</div>
-                    <ul>
-                        <li>Automated 5G Core provisioning with Ansible, reducing manual config by 70%</li>
-                        <li>Network automation for 200+ 5G Core devices using Netconf + Ansible</li>
-                        <li>Led team of 4 developers delivering 3 major automation projects on schedule</li>
-                        <li>Architected Kubernetes-based CDD Platform for continuous delivery</li>
-                    </ul>
+            <article>
+                <div class="job-header">
+                    <span class="job-title">DevOps Engineer / Architect</span>
+                    <span class="job-date">October 2021 - September 2022</span>
                 </div>
-            </div>
+                <div class="job-company">Ericsson</div>
+                <div class="job-location">Bengaluru, India</div>
+                <ul>
+                    <li>Automated 5G Core server provisioning with Ansible and Ansible Tower, reducing manual configuration by 70%</li>
+                    <li>Implemented network automation for 200+ 5G Core network devices using Netconf and Ansible</li>
+                    <li>Led a team of 4 developers, delivering 3 major automation projects on schedule</li>
+                    <li>Architected Kubernetes-based CDD Platform for continuous software delivery and upgrades</li>
+                </ul>
+            </article>
 
-            <div class="two-col">
-                <div class="col-label">Feb 2019 - Oct 2021<br>Bengaluru, India</div>
-                <div class="col-content">
-                    <div class="role">DevOps & Cloud Architect / Consultant</div>
-                    <div class="company">Dell EMC</div>
-                    <ul>
-                        <li>Led DC migration and app deployment for 5+ enterprise clients</li>
-                        <li>Deployed 12-factor Spring Boot apps on Kubernetes and PCF serving 100K+ users</li>
-                        <li>Automated infrastructure with Terraform, reducing setup from days to 30 minutes</li>
-                        <li>Implemented DevSecOps with Vault, Istio, KMS across production environments</li>
-                    </ul>
+            <article>
+                <div class="job-header">
+                    <span class="job-title">DevOps and Cloud Architect / Consultant</span>
+                    <span class="job-date">February 2019 - October 2021</span>
                 </div>
-            </div>
+                <div class="job-company">Dell EMC</div>
+                <div class="job-location">Bengaluru, India</div>
+                <ul>
+                    <li>Led data center migration, IaC, and application deployment projects for 5+ enterprise clients across banking and IT sectors</li>
+                    <li>Deployed 12-factor Cloud Native Spring Boot applications on Kubernetes and PCF, serving 100,000+ daily users</li>
+                    <li>Automated infrastructure provisioning with Terraform, reducing environment setup time from days to 30 minutes</li>
+                    <li>Implemented DevSecOps with HashiCorp Vault, Istio service mesh, and KMS for end-to-end production security</li>
+                </ul>
+            </article>
 
-            <div class="two-col">
-                <div class="col-label">Jul 2018 - Jan 2019<br>Bengaluru, India</div>
-                <div class="col-content">
-                    <div class="role">Lead Engineer</div>
-                    <div class="company">Wipro Limited</div>
-                    <ul>
-                        <li>Automated infrastructure provisioning with Ansible, reducing deployment time by 50%</li>
-                        <li>Built CD pipelines with auto-scaling handling 3x traffic spikes</li>
-                    </ul>
+            <article>
+                <div class="job-header">
+                    <span class="job-title">Lead Engineer</span>
+                    <span class="job-date">July 2018 - January 2019</span>
                 </div>
-            </div>
+                <div class="job-company">Wipro Limited</div>
+                <div class="job-location">Bengaluru, India</div>
+                <ul>
+                    <li>Automated infrastructure provisioning with Ansible across cloud and on-premises VMs, reducing deployment time by 50%</li>
+                    <li>Built continuous delivery pipelines with auto-scaling, handling 3x traffic spikes without manual intervention</li>
+                </ul>
+            </article>
 
-            <div class="two-col">
-                <div class="col-label">May 2013 - Jun 2018<br>Bengaluru / Reading, UK</div>
-                <div class="col-content">
-                    <div class="role">Senior Engineer</div>
-                    <div class="company">Ericsson</div>
-                    <ul>
-                        <li>Managed 500+ remote network nodes across multiple regions</li>
-                        <li>Maintained 99.95% uptime SLA for 2G/3G/4G sites</li>
-                        <li>International KT in Reading, United Kingdom</li>
-                    </ul>
+            <article>
+                <div class="job-header">
+                    <span class="job-title">Senior Engineer</span>
+                    <span class="job-date">May 2013 - June 2018</span>
                 </div>
-            </div>
+                <div class="job-company">Ericsson</div>
+                <div class="job-location">Bengaluru, India / Reading, United Kingdom</div>
+                <ul>
+                    <li>Managed configuration of 500+ remote network nodes (Node-B, RNCs) across multiple regions</li>
+                    <li>Maintained 99.95% uptime SLA for 2G/3G/4G remote sites through proactive fault management</li>
+                    <li>Completed international knowledge transfer in Reading, United Kingdom</li>
+                </ul>
+            </article>
 
-            <div class="two-col">
-                <div class="col-label">Oct 2012 - May 2013<br>Noida, India</div>
-                <div class="col-content">
-                    <div class="role">GNSC AM Engineer</div>
-                    <div class="company">IKYA (Quess Company)</div>
-                    <ul>
-                        <li>Supported Bharti Airtel's global network on multivendor platforms</li>
-                        <li>Monitored 1000+ network elements achieving 98% SLA compliance</li>
-                    </ul>
+            <article>
+                <div class="job-header">
+                    <span class="job-title">GNSC AM Engineer</span>
+                    <span class="job-date">October 2012 - May 2013</span>
                 </div>
-            </div>
-        </div>
+                <div class="job-company">IKYA Human Capital Solutions (Quess Company)</div>
+                <div class="job-location">Noida, India</div>
+                <ul>
+                    <li>Supported Bharti Airtel global network on multivendor platforms (Ericsson, Nokia, Huawei)</li>
+                    <li>Monitored and maintained 1,000+ network elements (RNC/BSC, Node-B/BTS) achieving 98% SLA compliance</li>
+                </ul>
+            </article>
+        </section>
 
-        <!-- Skills -->
-        <div class="section">
-            <div class="section-title">Technical Skills</div>
-            <div style="margin-bottom: 8px;">
-                <div style="font-size: 12px; font-weight: 600; margin-bottom: 4px;">CI/CD & Automation</div>
-                <div class="skills-grid">
-                    <span class="skill-chip">Jenkins</span><span class="skill-chip">Jenkins JTE</span><span class="skill-chip">GitLab CI/CD</span><span class="skill-chip">GitHub Actions</span><span class="skill-chip">ArgoCD</span><span class="skill-chip">Azure DevOps</span>
-                </div>
-            </div>
-            <div style="margin-bottom: 8px;">
-                <div style="font-size: 12px; font-weight: 600; margin-bottom: 4px;">Cloud & Containers</div>
-                <div class="skills-grid">
-                    <span class="skill-chip">AWS</span><span class="skill-chip">Azure</span><span class="skill-chip">Kubernetes</span><span class="skill-chip">Docker</span><span class="skill-chip">Helm</span><span class="skill-chip">Terraform</span><span class="skill-chip">Ansible</span><span class="skill-chip">Istio</span>
-                </div>
-            </div>
-            <div style="margin-bottom: 8px;">
-                <div style="font-size: 12px; font-weight: 600; margin-bottom: 4px;">Monitoring & Security</div>
-                <div class="skills-grid">
-                    <span class="skill-chip">Prometheus</span><span class="skill-chip">Grafana</span><span class="skill-chip">AppDynamics</span><span class="skill-chip">ELK Stack</span><span class="skill-chip">HashiCorp Vault</span><span class="skill-chip">SonarQube</span><span class="skill-chip">Sysdig</span>
-                </div>
-            </div>
-        </div>
+        <section class="skills-section">
+            <h3>Technical Skills</h3>
+            <p><strong>CI/CD and Automation:</strong> Jenkins, Jenkins JTE, GitLab CI/CD, GitHub Actions, ArgoCD, Azure DevOps, Groovy DSL, AWS CodeDeploy</p>
+            <p><strong>Cloud and Infrastructure:</strong> AWS (VPC, EC2, S3, ECS, IAM, RDS, Lambda, Route53), Azure, Terraform, VMware vSphere</p>
+            <p><strong>Containers and Orchestration:</strong> Kubernetes, Docker, Helm, Docker Compose, PCF/Cloud Foundry, Istio, Microservices</p>
+            <p><strong>Configuration and IaC:</strong> Ansible, Ansible Tower, Terraform, Shell Scripting, Python</p>
+            <p><strong>Security:</strong> HashiCorp Vault, DevSecOps, Sysdig, Anchore, KMS, SonarQube</p>
+            <p><strong>Monitoring and Observability:</strong> Prometheus, Grafana, AppDynamics, ELK Stack, CloudWatch, ServiceNow</p>
+            <p><strong>Platforms:</strong> WebLogic, JBoss, IIS, Spring Boot, Hadoop, Apache Airflow</p>
+        </section>
 
-        <!-- Education -->
-        <div class="section">
-            <div class="section-title">Education</div>
-            <div class="two-col">
-                <div class="col-label">2005 - 2009</div>
-                <div class="col-content">
-                    <div class="role">Bachelor of Technology (BTech)</div>
-                    <div class="company">Graphic Era University, Dehradun</div>
-                    <div class="location">Electronics and Communications Engineering</div>
-                </div>
-            </div>
-        </div>
+        <section>
+            <h3>Education</h3>
+            <p><strong>Bachelor of Technology (BTech)</strong> - Electronics and Communications Engineering</p>
+            <p>Graphic Era University, Dehradun, India | 2005 - 2009</p>
+        </section>
 
-        <!-- Certifications -->
-        <div class="section">
-            <div class="section-title">Certifications</div>
-            <ul class="cert-list" style="margin-left: 16px;">
+        <section>
+            <h3>Certifications</h3>
+            <ul class="simple-list">
                 <li>ITIL Foundation Level</li>
                 <li>Exin Cloud Computing Foundation</li>
-                <li>Associate - Cloud Infrastructure & Services v3.0</li>
+                <li>Associate - Cloud Infrastructure and Services Version 3.0</li>
             </ul>
-        </div>
+        </section>
 
-        <!-- Publications -->
-        <div class="section">
-            <div class="section-title">Publications</div>
-            <ul class="cert-list" style="margin-left: 16px;">
+        <section>
+            <h3>Publications</h3>
+            <ul class="simple-list">
                 <li>Ansible Driven Automated Deployment vCSA 6.5/6.7</li>
                 <li>vCSA Automated Deployment Using Ansible</li>
             </ul>
-        </div>
+        </section>
     </div>
 </body>
 </html>
